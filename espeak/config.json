@@ -1,0 +1,18 @@
+{
+  "name": "eSpeak",
+  "version": "1.0",
+  "slug": "espeak",
+  "description": "Text to speech",
+  "startup": "before",
+  "boot": "auto",
+  "stdin": true,
+  "audio": true,
+  "hassio_api": true,
+  "options": {
+    "language": "en"
+  },
+  "schema": {
+    "language": "match(.+)"
+  },
+  "map": ["share:rw", "config:rw"]
+}

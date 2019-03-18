@@ -1,0 +1,22 @@
+{
+  "name": "Syncthing Share",
+  "version": "1.1.0",
+  "slug": "syncthing_share",
+  "description": "Syncthing Share",
+  "startup": "before",
+  "boot": "auto",
+	"options": {
+	  "username": "syncthing",
+	  "password": "",
+	  "sync_dir": "/share/sync"
+	},
+	"schema": {
+	  "username": "match(.+)",
+	  "password": "match(.+)",
+	  "sync_dir": "match(^/share/.+$)"
+	},
+  "ports": {"8384/tcp": 8384, "22000/tcp": 22000, "21027/udp": 21027},
+  "map": ["share:rw", "config:rw", "backup:rw", "addons:rw"],
+  "webui": "http://[HOST]:[PORT:8384]"
+}
+
