@@ -1,0 +1,30 @@
+{
+  "name": "Nginx SSL Authenticator",
+  "version": "1.0",
+  "slug": "nginx_ssl",
+  "description": "Nginx SSL Authenticator",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "domain": "example.com",
+    "certfile": "server.crt",
+    "keyfile": "server.pem",
+    "cafile": "ca.crt",
+    "pwfile": "ca.pph",
+    "url": "http://192.168.1.23:5050"
+  },
+  "schema": {
+    "domain": "str",
+    "certfile": "str",
+    "keyfile": "str",
+    "cafile": "str",
+    "pwfile": "str",
+    "url": "str"
+  },
+  "ports": {
+    "443/tcp": 443
+   },
+  "map": ["ssl"]
+}
+
