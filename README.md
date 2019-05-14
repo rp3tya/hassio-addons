@@ -1,4 +1,4 @@
 # hassio-addons
 
-Localy built hassio addons
+Locally built hassio addons
 
