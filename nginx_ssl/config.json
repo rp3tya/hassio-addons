@@ -1,6 +1,6 @@
 {
   "name": "Nginx SSL Authenticator",
-  "version": "1.0",
+  "version": "1.1",
   "slug": "nginx_ssl",
   "description": "Nginx SSL Authenticator",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
