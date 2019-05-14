@@ -21,6 +21,7 @@ echo -e "${PASSWORD}\n${PASSWORD}" | passwd "${USERNAME}"
 chown -R "${USERNAME}":"${USERNAME}" /data
 mkdir -p "$SYNC_DIR"
 chown -R "${USERNAME}":"${USERNAME}" "$SYNC_DIR"
+chown -R "${USERNAME}":"${USERNAME}" /usr/local/bin/syncthing
 
 # Launch syncthing as user
 su -s /bin/bash "${USERNAME}" -c 'syncthing -no-browser -home=/data/'
