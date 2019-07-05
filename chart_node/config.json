@@ -1,0 +1,13 @@
+{
+  "name": "Chart Node",
+  "version": "1",
+  "slug": "chart_node",
+  "description": "Node + Chart",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "map": ["config:rw"]
+}
+
