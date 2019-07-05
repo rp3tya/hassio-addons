@@ -14,4 +14,4 @@ done
 
 echo "Exiting..."
 
-# Usage: {"addon":"local_chart_node", "input":"testchart"}
+# Usage: {"addon":"local_chart_node", "input":"example"}
