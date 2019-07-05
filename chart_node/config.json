@@ -1,11 +1,13 @@
 {
   "name": "Chart Node",
-  "version": "1",
+  "version": "1.4",
   "slug": "chart_node",
   "description": "Node + Chart",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "before",
   "boot": "auto",
+  "stdin": true,
+  "hassio_api": true,
   "options": {},
   "schema": {},
   "map": ["config:rw"]
