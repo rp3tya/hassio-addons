@@ -1,0 +1,17 @@
+{
+	"name": "SSH Tunnel",
+	"version": "1.0",
+	"slug": "tunnel",
+	"description": "SSH Tunnel",
+	"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+	"startup": "before",
+	"boot": "auto",
+	"ports": {"22/tcp":2222},
+	"options": {
+	  "auth_key": ""
+	},
+	"schema": {
+	  "auth_key": "match(.+)"
+	}
+}
+
