@@ -8,8 +8,8 @@ RUN apk add --no-cache openssh-server
 RUN mkdir /var/run/sshd
 
 # Copy data for add-on
+COPY sshd_config /etc/ssh/
 COPY run.sh /
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
-
