@@ -8,7 +8,9 @@ ENV LANG C.UTF-8
 RUN apk add --no-cache nginx libressl
 
 # Copy data
-COPY run.sh /
 COPY nginx.conf /etc/
+COPY run.sh /
 
+# Entrypoint
+RUN chmod a+x /run.sh
 CMD [ "/run.sh" ]
