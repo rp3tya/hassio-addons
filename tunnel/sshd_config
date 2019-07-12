@@ -16,11 +16,8 @@ LogLevel VERBOSE
 # ===================
 Protocol 2
 StrictModes yes
-#HostKey /data/ssh_host_rsa_key
-#HostKey /data/ssh_host_ed25519_key
-HostKey /etc/ssh/ssh_host_rsa_key
-#HostKey /etc/ssh/ssh_host_ecdsa_key
-HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /data/ssh_host_rsa_key
+HostKey /data/ssh_host_ed25519_key
 
 # Cryptography
 # ===================
