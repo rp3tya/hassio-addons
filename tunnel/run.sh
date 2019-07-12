@@ -18,6 +18,8 @@ echo "$AUTH_KEY" > /etc/ssh/authorized_keys
 if [ ! -f /data/ssh_host_rsa_key ]; then
     echo "Generating host keys..."
     ssh-keygen -A
+    mv /etc/ssh/ssh_host_rsa_key /data/
+    mv /etc/ssh/ssh_host_ed25519_key /data/
 fi
 
 echo "Starting server..."
