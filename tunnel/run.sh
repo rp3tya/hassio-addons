@@ -15,7 +15,7 @@ chmod 600 /home/tunnel/.ssh/*
 
 echo "$AUTH_KEY" > /etc/ssh/authorized_keys
 
-if [ ! -f /etc/ssh/ssh_host_rsa_key ]; then
+if [ ! -f /data/ssh_host_rsa_key ]; then
     echo "Generating host keys..."
     ssh-keygen -A
 fi
