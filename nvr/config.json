@@ -1,0 +1,19 @@
+{
+  "name": "NVR",
+  "version": "1.0",
+  "slug": "nvr",
+  "description": "Network Video Recorder",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "stdin": true,
+  "audio": true,
+  "hassio_api": true,
+  "options": {
+    "stream": "rtsp"
+  },
+  "schema": {
+    "stream": "match(.+)"
+  },
+  "map": ["share:rw", "config:rw"]
+}
