@@ -1,0 +1,33 @@
+{
+  "name": "Radicale Proxy",
+  "version": "1.1",
+  "slug": "radicale_proxy",
+  "description": "Radicale Proxy",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "domain": "example.com",
+    "certfile": "server.crt",
+    "keyfile": "server.pem",
+    "cafile": "ca.crt",
+    "pwfile": "ca.pph",
+    "url": "http://192.168.1.23:5232",
+    "user": "dave"
+  },
+  "schema": {
+    "domain": "str",
+    "certfile": "str",
+    "keyfile": "str",
+    "cafile": "str",
+    "pwfile": "str",
+    "url": "str",
+    "user": "str"
+  },
+  "ports": {
+    "80/tcp": 80,
+    "443/tcp": 443
+   },
+  "map": ["ssl"]
+}
+
